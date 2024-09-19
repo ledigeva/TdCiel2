@@ -38,11 +38,12 @@ int main()
         choix=leMenu.Afficher();
         switch (choix){
         case OPTION_0:
-            cout <<"Vous consulter le solde" <<endl;
+            cout <<"Vous solde est de :  " << compte.ConsulterSolde() << " Euro" << endl;
             Menu::AttendreAppuiTouche();
+
             break;
         case OPTION_1:
-            cout <<"Vous effectuer un depot" <<endl;
+            cout <<"Vous effectuer un depot" << compte.Deposer(); << " Euro" << endl;
             Menu::AttendreAppuiTouche();
             break;
         case OPTION_2:

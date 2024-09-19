@@ -1,0 +1,5 @@
+<map id="Barre" name="Barre">
+<area shape="rect" id="node1" title=" " alt="" coords="73,5,254,171"/>
+<area shape="rect" id="node2" href="$class_barre_carree.html" title=" " alt="" coords="5,233,140,340"/>
+<area shape="rect" id="node3" href="$class_barre_ronde.html" title=" " alt="" coords="165,219,346,355"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="barre.h" name="barre.h">
+<area shape="rect" id="node1" title=" " alt="" coords="184,5,247,32"/>
+<area shape="rect" id="node2" href="$barre_8cpp.html" title=" " alt="" coords="5,80,81,107"/>
+<area shape="rect" id="node3" href="$barrecarree_8h.html" title=" " alt="" coords="106,80,205,107"/>
+<area shape="rect" id="node6" href="$barreronde_8h.html" title=" " alt="" coords="229,80,324,107"/>
+<area shape="rect" id="node8" href="$catalogue_8h.html" title=" " alt="" coords="348,80,437,107"/>
+<area shape="rect" id="node4" href="$barrecarree_8cpp.html" title=" " alt="" coords="43,155,155,181"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="179,155,254,181"/>
+<area shape="rect" id="node7" href="$barreronde_8cpp.html" title=" " alt="" coords="279,155,387,181"/>
+<area shape="rect" id="node9" href="$catalogue_8cpp.html" title=" " alt="" coords="411,155,513,181"/>
+</map>

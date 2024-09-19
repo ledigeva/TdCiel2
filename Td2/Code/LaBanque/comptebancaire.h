@@ -12,7 +12,7 @@ public:
     bool Retirer(float _montant);
     float ConsulterSolde();
 
-private:
+protected:
 
     float solde;
 
