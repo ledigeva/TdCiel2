@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Serveur</class>
+ <widget class="QWidget" name="Serveur">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>780</width>
+    <height>468</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Serveur</string>
+  </property>
+  <widget class="QPushButton" name="pushButtonDiffusion">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>422</y>
+     <width>751</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Lancer la diffusion</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditMeteo">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>380</y>
+     <width>371</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>360</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Bulletin météo :</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonSupprimerMessage">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>330</y>
+     <width>371</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Supprimer un message</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEditAlerte">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>200</y>
+     <width>371</width>
+     <height>121</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Message d'alerte :</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonAjoueMessage">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>371</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ajouter un message</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEditInformation">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>371</width>
+     <height>121</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Message d'information :</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonCreeAlerte">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>371</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Créer une alerte</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonModifierBulletinMeteo">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>380</y>
+     <width>371</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Modifier le bulletin météo</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidgetMessage">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>31</y>
+     <width>371</width>
+     <height>281</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>10</y>
+     <width>251</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Liste des messages en cours de diffusion :</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
