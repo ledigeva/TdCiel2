@@ -27,13 +27,13 @@ public:
     {
         if (ServeurPanneauxSimple->objectName().isEmpty())
             ServeurPanneauxSimple->setObjectName("ServeurPanneauxSimple");
-        ServeurPanneauxSimple->resize(509, 405);
+        ServeurPanneauxSimple->resize(549, 444);
         textEditInformation = new QTextEdit(ServeurPanneauxSimple);
         textEditInformation->setObjectName("textEditInformation");
         textEditInformation->setGeometry(QRect(10, 20, 471, 311));
         pushButton = new QPushButton(ServeurPanneauxSimple);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(20, 340, 431, 51));
+        pushButton->setGeometry(QRect(10, 340, 471, 51));
 
         retranslateUi(ServeurPanneauxSimple);
 

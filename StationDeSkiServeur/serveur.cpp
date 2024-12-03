@@ -43,20 +43,21 @@ void Serveur::onTimerInformation_timeout()
     out.setVersion(QDataStream::Qt_6_0);
 
     // Parcourt tous les éléments de la QListWidget pour créer un message complet
-    QStringList informations;
-    for (int i = 0; i < ui->listWidgetMessage->count(); ++i) {
-        QListWidgetItem* item = ui->listWidgetMessage->item(i);
-        if (item) {
-            informations << item->text(); // Ajoute chaque élément à une liste
-        }
-    }
 
     // Combine les éléments en un seul message séparé par des retours à la ligne
-    QString messageComplet = informations.join("\n");
+    QString information;
+    QListWidgetItem* item = ui->listWidgetMessage->item(indexMessage);
+    if (item) {
+        information = item->text(); // Ajoute chaque élément à une liste
+        out << 'I' << information; // 'I' indique qu'il s'agit d'un message d'information
+        EnvoyaiDatagram(buffer);
+        indexMessage++;
+        if (indexMessage >= ui->listWidgetMessage->count())
+            indexMessage = 0;
+    }
 
     // Écrit le message complet dans le flux
-    out << 'I' << messageComplet; // 'I' indique qu'il s'agit d'un message d'information
-    EnvoyaiDatagram(buffer);
+
 }
 
 void Serveur::onTimerHeure_timeout()
@@ -132,6 +133,20 @@ void Serveur::on_pushButtonAjoueMessage_clicked()
 
 void Serveur::on_pushButtonCreeAlerte_clicked()
 {
+    // Préparer le buffer pour l'envoi
+    QByteArray buffer;
+    QDataStream out(&buffer, QIODevice::WriteOnly);
+    out.setVersion(QDataStream::Qt_6_0);
+
+    // Récupérer le texte de l'alerte depuis le QTextEdit
+    QString alerteTexte = ui->textEditAlerte->toPlainText();
+
+    // Ajouter le type de message 'A' et le texte de l'alerte au buffer
+    out << 'A' << alerteTexte;
+
+    // Envoyer le datagramme via votre méthode personnalisée
+    EnvoyaiDatagram(buffer);
+
 
 }
 

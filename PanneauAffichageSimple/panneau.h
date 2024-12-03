@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QUdpSocket>
+#include <QNetworkDatagram>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
